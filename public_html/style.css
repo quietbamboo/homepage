@@ -1,6 +1,6 @@
-body {font-family:arial;font-size:13px;cursor:default;color:AAAAAA}
+body {font-family:Arial, sans-serif;font-size:13px;cursor:default;color:AAAAAA}
 td {
-    font-family:Comic Sans MS;
+    font-family:Arial, sans-serif;
     font-size:13px;
     cursor:default;
     color:AAAAAA
@@ -9,18 +9,18 @@ td {
 a {color:3A88C2;text-decoration:none;font-size:13px}
 a:hover {color:3A88C2;text-decoration:underline;font-size:14px}
 input {border-width:1;
-       font-family:arial;font-size:13px;padding:2px;height:21px;
+       font-family:Arial, sans-serif;font-size:13px;padding:2px;height:21px;
        border-color:CCCCCC;border-style:solid;
        background-color:F9F9F9;color:999999
 }
 .logo{
-font-size:35px;color:222244;font-family:Comic Sans MS;
+font-size:35px;color:222244;font-family:Arial, sans-serif;
 }
 .slogan{
-font-size:14px;color:333333;padding:18 0 0 10;font-family:Comic Sans MS;text-align: left;
+font-size:14px;color:333333;padding:18 0 0 10;font-family:Arial, sans-serif;text-align: left;
 }
 .itemtitle{
-    font-size:18px;color:#ffffff;font-family:Comic Sans MS;
+    font-size:18px;color:#ffffff;font-family:Arial, sans-serif;
     background-color: 20209F;
 }
 .smallcomment{
@@ -32,6 +32,7 @@ font-size:14px;color:333333;padding:18 0 0 10;font-family:Comic Sans MS;text-ali
 .itemtext{
     color:888888;
     line-height:1.6em;
+    font-family: Arial, sans-serif;
 }
 .papertitle{
     color:459F20;
