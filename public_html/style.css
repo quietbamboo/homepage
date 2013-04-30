@@ -1,6 +1,6 @@
 body {font-family:arial;font-size:13px;cursor:default;color:AAAAAA}
 td {
-    font-family:Comic Sans, Comic Sans MS, cursive;
+    font-family:Comic Sans MS;
     font-size:13px;
     cursor:default;
     color:AAAAAA
@@ -14,15 +14,20 @@ input {border-width:1;
        background-color:F9F9F9;color:999999
 }
 .logo{
-font-size:35px;color:222244;font-family:Comic Sans, Comic Sans MS, cursive;
+font-size:35px;color:222244;font-family:Comic Sans MS;
 }
 .slogan{
-font-size:14px;color:333333;padding:18 0 0 10;font-family:Comic Sans, Comic Sans MS, cursive;text-align: left;
+font-size:14px;color:333333;padding:18 0 0 10;font-family:Comic Sans MS;text-align: left;
 }
 .itemtitle{
-    font-size:18px;color:#ffffff;font-family:Comic Sans, Comic Sans MS, cursive;
+    font-size:18px;color:#ffffff;font-family:Comic Sans MS;
     background-color: 20209F;
 }
+.smallcomment{
+    color:666666;
+    font-size: 10px;
+}
+.smallcomment .a:hover{color:3A88C2;text-decoration:underline;font-size:11px}
 
 .itemtext{
     color:888888;
