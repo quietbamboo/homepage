@@ -1,0 +1,7 @@
+1. Editting distance (conflicts with current dir branching approach)
+2. Add network random spider to gradually improve the database
+3. Add phrase support
+4. Result rendoring. Give a list of results with ranking based on its possibilities.
+5. Fix the Gutenburg bug
+6. Fix the z branch bug
+7

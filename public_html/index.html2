@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- Smartphone Network Test -->
+<head>
+<title>Smartphone Network Test</title>
+<link rel="stylesheet" type="text/css" href="http://dotaart.com/iphone/style.css"><script type="text/javascript">function setback(){document.getElementById('backlink').href="javascript: history.back()"}</script>
+<link rel="icon" type="image/png" href="http://dotaart.com/iphone/favicon.png">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="description" content="The Smartphone Network Test tests your Internet connection for signs of trouble. Understand your connectivity through a detailed report of any performance and security issues.">
+<meta name="keywords" content="Smartphone Network Test, network troubleshooting, network analysis, network analyzer, Internet debugging, connectivity test, proxy, filtering, bandwidth, uplink, downlink, latency">
+</head>
+<body onload="setback()">
+<div><b class="corner"><b class="corner1"><b></b></b><b class="corner2"><b></b></b><b class="corner3"></b><b class="corner4"></b><b class="corner5"></b></b><div class="cornerfg">
+
+<div id="frame">
+<div class="hdr">The <a class="plain" href="http://eecs.umich.edu/~hjx/index.html"><span class="txt-icsi">UMich</span> <span class="txt-isp">Smartphone Network Test</span></a> <span class="txt-beta">1.05 Beta</span></div>
+
+<div class="bar-border"><div id="bar">
+<!--span class="txt-current">Introduction</span> &raquo; <span class="txt-todo">Analysis</span> &raquo; <span class="txt-todo">Results</span--> 
+</div></div>
+
+<div id="content">
+
+<p class="txt-title">Quick Introduction</p>
+
+<p class="an">We provide a tool that runs on <font color=red>iPhone, GPhone and Windows Mobile phones</font>, which runs in <font color=#EE1111>2 - 4 minutes</font>.
+Using this tool, you will have a good knowledge of your smartphone's <font color=#EE9E80>network condition</font>,  such as bandwitdh (kbps), signal strength, etc.
+You can also easily diagnose any <font color=#EE9E80>network problem</font>, even some hidden traffic policies imposed by your cellular carriers.
+All the results are refreshed each time you run our tool, so we encourage you to run it at different time and different locations,
+in this way, you can know where and when is best suitable for web browsing with your smartphone.
+<BR><BR>
+Any feedbacks are high appreciated.
+<a href="mailto:hjx@umich.edu"> Contact us </a> in case of any question or suggestion.
+</p>
+
+<p class="txt-title">Privacy Policy</p>
+<p class="an">
+ 	The only information that we use is your device's location information, the unique device ID and area code of your phone number. We will only use these information for aggregate analysis. No personal information will be collected or used. All the other information we collect is obtained from network measurement.
+
+</p>
+<p class="txt-title">Install Now!</p>
+<p class="an">
+	<li><a class="plain" href="iphone.html">iPhone / iPod Touch</a></li>
+	<BR>
+	<li><a class="plain" href="android.html">Android G1 / G2</a></li>
+	<BR>
+	<li><a class="plain" href="wm.html">Windows Mobile 6.1</a></li>
+</p>
+
+<p class="txt-title">Follow us on Twitter</p>
+<div align="center">
+<div id="twtr-profile-widget"></div>
+<script src="http://widgets.twimg.com/j/1/widget.js"></script>
+<link href="http://widgets.twimg.com/j/1/widget.css" type="text/css" rel="stylesheet">
+<script>
+	new TWTR.Widget({
+		profile: true,
+		id: 'twtr-profile-widget',
+		loop: true,
+		width: 350,
+		height: 50,
+		theme: {
+			shell: {
+				background: '#40829f',
+				color: '#ffffff'
+			},
+			tweets: {
+				background: '#ffffff',
+				color: '#444444',
+				links: '#1985b5'
+			}
+		}
+	}).render().setProfile('3gtest').start();
+</script>
+</div>
+
+
+<p class="txt-title">Frequently Asked Questions</p>
+
+<ul>
+  <li><a class="plain" href="#about_test">What is Smartphone Network Test?<img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#why">How is this test helpful to me? <img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#about_app">What does your application test?<img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#phones">Which smartphones does your application support? <img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#install">How can I install your application on my smartphone? <img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#run">How to run your application? <img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#time">How long does it take for your application to run? <img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#result">What results can I see after your applications finishes running? <img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+  <li><a class="plain" href="#who">Who are we? <img src="http://dotaart.com/iphone/arr_err.gif" border="0" alt="link"></a></li>
+</ul>
+
+<a name="about_test"></a>
+<ul class="faq">
+	<li class="qu">What is Smartphone Network Test?</li>
+	<BR>
+	<li class="an">Smartphone Network Test is a cross-platform tool which is basically a normal application on smartphones to test various properties of the network of your smartphones.</li>
+</ul>
+
+<a name="why"></a>
+<ul class="faq">
+	<li class="qu">How is this test helpful to me?</li>
+	<BR>
+ <li class="an">Our application tests a large range of network properties which are directly related with the performance of your smartphone when using network-related applications, such as email, web-browsing, streaming video, etc. When you encounter any problem when using those network related applications, our test can help you diagnose the source of poor performance, is it because of the bad signal strength, bad network bandwidth, or because of the slow response of your local DNS server, or in some case, because of the network restriction policies imposed by your cellular network carriers.
+ <BR> 
+These network properties are also interesting to know about your 3G cellular network on your smartphone.
+ </li>
+</ul>
+
+<a name="about_app"></a>
+<ul class="faq">
+	<li class="qu">What does your application test?</li>
+	<BR>
+	<li class="an">
+	Your smartphone's local IP address, global IP address (seen from external servers), gateway IP address.
+	<BR>
+	Your local DNS server's running status, its response speed, whether it's blacklisting any popular domains.
+	<BR>
+	We also test whether DNS lookup to external DNS servers using either TCP or UDP is allowed or not.
+	<BR>
+	We use a list of web servers located at different cities in US to test how fast your smartphone can connect to each of them. We use ping round trip time (RTT), TCP handshake time, and HTTP get request response time to evaluate your smartphone's performance for browsing websites.
+	<BR>
+	Whether this is any hidden HTTP proxy between your smartphone and external web server and whether this proxy does HTTP caching or compression. If HTTP proxy is present, your web browsing speed can be improved.
+	<BR>
+	We also test whether the TCP traffic going through the following ports are allowed.
+	21(FTP),
+	22(SSH),
+	25(SMTP),
+	53(DNS),
+	110(POP),
+	135(RPC),
+	139(NETBIOS),
+	143(IMAP),
+	161(SNMP),
+	443(HTTPS),
+	445(SMB),
+	465(SMTP SSL),
+	585(Secure IMAP),
+	587(Authenticated SMTP),
+	993(IMAP SSL),
+	995(POP SSL),
+	5060(SIP),
+	6881(BitTorrent)
+	<BR>
+	Specifically, we use bi-directional traffic simulation to test whether BitTorrent traffic is blocked by your ISP and how they blocked it.
+	<BR>
+	Downlink and uplink bandwidth of your smartphone.
+	</li>
+</ul>
+
+
+<a name="phones"></a>
+<ul class="faq">
+	<li class="qu">Which smartphones does your application support?</li>
+	<BR>
+	<li class="an">We support all versions of iPhone including iPhone 3.0.
+	<BR>
+	Google's Android is also supported including G1 and G2.
+	<BR>
+	All smartphones running Microsoft Windows Mobile 6.1 and earlier versions of Windows Mobile are all supported.
+ </li>
+</ul>
+
+<a name="install"></a>
+<ul class="faq">
+	<li class="qu">How can I install your application on my smartphone?</li>
+	<BR>
+	<li class="an">
+	Currently our application is in internal testing stage. In a short while, our application will be available for free download in Apple Store, Android Market and the incoming Microsoft Application Market.
+	</li>
+</ul>
+
+<a name="run"></a>
+<ul class="faq">
+ <li class="qu">How to run your application?</li>	  
+	<BR>
+ <li class="an">
+ It's just one click application. After clicking start button, you just need some patience and wait till its completion.
+ </li>
+</ul>
+
+<a name="time"></a>
+<ul class="faq">
+	<li class="qu">How long does it take for your application to run?</li>
+	<BR>
+ <li class="an">
+ 	Normally, under normal signal strength, when using 3G network, it takes about 2 - 4 minutes for the application to finish.
+	Whenever you feel impatient, you can easily stop the test. But we strongly encourge you to spend these several minutes to have a better understanding of your 3G network.
+</li>
+</ul>
+
+<a name="result"></a>
+<ul class="faq">
+	<li class="qu">What results can I see after your applications finishes running?</li>
+	<BR>
+ <li class="an">
+ 	Your local IP address
+	<BR>
+	Your global IP address
+	<BR>
+	Gateway IP address
+	<BR>
+	Local DNS server status
+	<BR>
+	Local DNS lookup latency (ms)
+	<BR>
+	DNS lookup to external DNS servers allowed or not
+	<BR>
+	Average ping latency to a list of 20 selected landmark servers
+	<BR>
+	Average TCP handshake time to a list of 20 selected landmark servers
+	<BR>
+	Average HTTP get request response time to a list of 20 selected landmark servers
+	<BR>
+	Signal strength level from 0 to 10
+	<BR>
+	Allowd / blocked TCP ports for direct remote access
+	<BR>
+	HTTP caching / compression detection
+	<BR>
+	TCP downlink throughput (kbps)
+	<BR>
+	TCP uplink throughput (kbps)
+ </li>
+</ul>
+
+<a name="who"></a>
+<ul class="faq">
+	<li class="qu">Who are we?</li>
+	<BR>
+	<li class="an">
+	We are Junxian Huang, Qiang Xu and Birjodh Tiwana. We are now doing our PhD study in the Department of Computer Science, University of Michigan, Ann Arbor. We work with Prof. <a href=http://www.eecs.umich.edu/~zmao/>Z. Morley Mao</a> in collaboration with Dr. <a href=http://research.microsoft.com/en-us/people/mzh/>Ming Zhang</a>, Microsoft Research.
+</li>
+</ul>
+
+<div id="box"><!--span id="box-inner"><a id="backlink" class="boxlink" href="index.html">&laquo; Back</a></span--></div>
+</div>
+<div class="bar-border"><div id="footer">
+&nbsp;
+<div id="footer-right">
+<!--a class="footer-it" href="/faq.html">FAQs</a--> + 
+<a class="footer-it" href="mailto:hjx@umich.edu">Contact us</a>
+</div></div></div>
+
+</div>
+
+</div><b class="corner"><b class="corner5"></b><b class="corner4"></b><b class="corner3"></b><b class="corner2"><b></b></b><b class="corner1"><b></b></b></b></div>
+
+<!--Google Analytics-->
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-3023412-4");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+
+</body>
+</html>
+
