@@ -3,3 +3,9 @@ quietbamboo.github.com/
 
 .DS_Store
 /homepage/nbproject/private/
+*.log
+*.out
+*.aux
+*.synctex.gz
+*.bbl
+*.blg

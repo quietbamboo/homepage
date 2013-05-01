@@ -1,0 +1,304 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Junxian Huang}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, junxian huang}
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.eecs.umich.edu/}{University of Michigan, Ann Arbor} \\
+  Department of Computer Science \\
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (734) 276 7136  \\
+    Address: & 2260 Hayward Street, Ann Arbor MI 48109\\
+    Email: & \href{mailto:hjx@umich.edu}{\tt hjx@umich.edu} \\
+    Homepage: & \href{http://www.eecs.umich.edu/~hjx}{\tt http://www.eecs.umich.edu/$\sim$hjx} \\
+  \end{tabular}
+\end{minipage}
+
+
+%\section*{Personal}
+
+%\begin{itemize}
+%\item Born on September 29, 1895.
+%\item United States Citizen.
+%\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+  \item Ph.D. Computer Science, {\em The University of Michigan}, Ann Arbor (2008 - 2013 expected)
+  
+  \item B.S. Computer Science, {\em Tsinghua University}, Beijing (2004 - 2008)
+ 
+\end{itemize}
+
+
+%\section*{Research}
+%
+%\begin{itemize}
+%\item My research interests include  mobile computing related performance, 3G network policy, security and privacy study. I'm also actively exploring the space of cloud computing service for smartphones, 3G network infrastructure design and improvement, and context-aware mobile service, {\em etc}.
+%\end{itemize}
+
+%\section*{Projects}
+%\begin{itemize}
+%\item {\em - 3GTest:} This project aimed at understanding performance and networking policies of commercial 3G netorks. I created a tool called \href{http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=327015685&mt=8&s=143441}{\bf 3GTest} which is downloaded by thousands of users on iPhone through Apple Store
+%\item {\em - Smartphone Application Performance:} We studied Web browsing, streaming video and VoIP performance on iPhone, Windows Mobile and Android platforms. With systematical measurement and analysis, we designed a benchmark system to compare the performance differences and identify the bottleneck
+%\item {\em - Security in Social Applications:} In collaboration with Microsoft Research Silicon Valley, we designed a better security system based on social graph properties, which is applicable to any social application, such as email, OSN, etc.
+%\item {\em - Secure API:} We are building a set of APIs on Android so that user's privacy can be better protected. Current permission controlling system on Android has many flaws and with our new design, these problems can be fixed
+%\end{itemize}
+
+\section*{Internship}
+\begin{itemize}
+%$\quad -$ We developed a modular link layer for wireless platforms and provided lower layer support
+%$\quad\quad$to make MAC layer programmable.
+\item {\em AT\&T Labs Research}, summer intern (May, 2012 - August, 2012)
+\item {\em Microsoft Research Silicon Valley}, summer intern (May, 2010 - August, 2010)
+\item {\em Microsoft Research Asia}, summer intern (June, 2007 - January, 2008)
+\end{itemize}
+
+\section*{Publications}
+
+%\subsection*{Technical report}
+\begin{itemize}
+%\item {Anatomizing Application Performance Differences on Smartphones. {\em Junxian Huang, Qiang Xu, Birjodh Tiwana, Z. Morley Mao, Ming Zhang, Paramvir Bahl}. {\bf The University of Michigan, \href{https://www.eecs.umich.edu/techreports/cse/2009/CSE-TR-556-09.pdf}{Tech Report CSE-TR-556-09}, also in submission for Mobisys 2010}.}
+
+\item {An In-depth Study of LTE: Effect of Network Protocol and Application Behavior on Performance.\\
+{\em Junxian Huang, Feng Qian, Yihua Guo, Yuanyuan Zhou, Qiang Xu, Z. Morley Mao, Subhabrata Sen and Oliver Spatscheck}.\\
+{\bf SIGCOMM 2013}}
+
+\item {SocialWatch: Detection of Online Service Abuse via Large-Scale Social Graphs.\\
+{\em Junxian Huang, Yinglian Xie, Fang Yu, Qifa Ke, Martin Abadi, Eliot Gillum and Z. Morley Mao}.\\
+{\bf ASIACCS 2013}}
+
+
+\item {How to Reduce Smartphone Trafﬁc Volume by 30\%?\\
+{\em Feng Qian, Junxian Huang, Jeffrey Erman, Z. Morley Mao, Subhabrata Sen, and Oliver Spatscheck}.\\
+{\bf PAM 2013}}
+
+\item {Screen-Off Traffic Characterization and Optimization in 3G/4G Networks.\\
+{\em Junxian Huang, Feng Qian, Z. Morley Mao, Subhabrata Sen, and Oliver Spatscheck}.\\
+{\bf IMC 2012}}
+
+%\item {SocialWatch: Detection of Online-Service Abuse via Large-Scale Social Graphs.\\
+%{\em Junxian Huang, Yinglian Xie, Fang Yu, Qifa Ke, Martin Abadi, Eliot Gillum, and Z. Morley Mao}.\\
+%Under review, available upon request}
+
+\item {Innocent by Association: Early Recognition of Legitimate Users.\\
+{\em Yinglian Xie, Fang Yu, Qifa Ke, Martin Abadi, Eliot Gillum, Krish Vitaldevaria, Jason Walter, Junxian Huang, and Z. Morley Mao}.\\
+{\bf CCS 2012}}
+
+\item {A Close Examination of Performance and Power Characteristics of 4G LTE Networks.\\
+{\em Junxian Huang, Feng Qian, Alexandre Gerber, Z. Morley Mao, Subhabrata Sen, and Oliver Spatscheck}.\\
+{\bf Mobisys 2012, Best paper runner-up}}
+
+\item {Web Caching on Smartphones: Ideal vs. Reality.\\
+{\em Feng Qian, Kee Shen Quah, Junxian Huang, Jeffrey Erman, Alexandre Gerber, Z. Morley Mao, Subhabrata Sen, and Oliver Spatscheck}.\\
+{\bf Mobisys 2012}}
+
+%\item {Uncovering Cellular Network Characteristics: Performance, Infrastructure, and Policies.\\
+%{\em Junxian Huang, Feng Qian, Qiang Xu, Zhiyun Qian, Z. Morley Mao, and Ammar Rayes}.\\
+%{\bf SRII 2012}}
+
+
+\item {Periodic Transfers in Mobile Applications: Network-wide Origin, Impact, and Optimization.\\
+{\em Feng Qian, Zhaoguang Wang, Yudong Gao, Junxian Huang, Alexandre Gerber, Z. Morley Mao, Subhabrata Sen, and Oliver Spatscheck}.\\
+{\bf WWW 2012}}
+
+
+\item {Cellular Data Network Infrastructure Characterization and Implication on Mobile Content Placement.\\
+{\em Qiang Xu, Junxian Huang, Zhaoguang Wang, Feng Qian, Alexandre Gerber, and Z. Morley Mao}.\\
+{\bf Sigmetrics 2011}}
+
+\item {Anatomizing Application Performance Differences on Smartphones.\\
+{\em Junxian Huang, Qiang Xu, Birjodh Tiwana, Z. Morley Mao, Ming Zhang, and Paramvir Bahl}. \\
+{\bf Mobisys 2010, Best paper runner-up}}
+
+\item {Deception Detection Via Blob Motion Pattern Analysis.\\
+{\em Fan Xia, Hong Wang, and Junxian Huang}. \\
+{\bf Affective Computing and Intelligent Interaction (ACII) 2007}}
+\end{itemize}
+
+\section*{Technical Reports}
+\begin{itemize}
+\item {SocialWatch: Detection of Online Service Abuse via Large-Scale Social Graphs.\\
+{\em Junxian Huang, Yinglian Xie, Fang Yu, Qifa Ke, Martin Abadi, Eliot Gillum, and Z. Morley Mao}.\\
+{\bf MSR-TR-2013-24}, 2013}
+ 
+\item {Uncovering Cellular Network Characteristics: Performance, Infrastructure, and Policies.\\
+{\em Junxian Huang, Feng Qian, Qiang Xu, Zhiyun Qian, Z. Morley Mao, and Ammar Rayes}.\\
+{\bf CSE-TR-578-13}, 2013}
+
+\end{itemize}
+
+\section*{Conference Talks}
+\begin{itemize}
+\item {Screen-Off Traffic Characterization and Optimization in 3G/4G Networks.\\
+{\bf IMC 2012} Boston, United States}
+\item {A Close Examination of Performance and Power Characteristics of 4G LTE Networks.\\
+{\bf Mobisys 2012} Lake District, United Kingdom}
+\item {Anatomizing Application Performance Differences on Smartphones.\\
+{\bf Mobisys 2010} San Francisco, United States}
+\end{itemize}
+
+\section*{Honors and Awards}
+\begin{itemize}
+
+\item{2011 - Runner-up of the Fall 2011 University of Michigan Mobile Apps Challenge}
+
+\item{2011 - Winners of the \textbf{FCC Open Internet App Challenge} in \url{Challenge.gov}\\
+In the categories of  ``Open Internet App Award'' and ``People's Choice App''.\\
+Project: ``MobiPerf: Mobile Network Measurement System''\\
+{\em University of Michigan and Microsoft Research}}
+
+\item{2010 - Winner of Yahoo Hack U Competition in University of Michigan}
+
+\item{2010 - Runner-up of the Spring 2010 University of Michigan Mobile Apps Challenge}
+
+\item{2010 - MobiSys 2010 Student Travel Grant}
+
+\item{2008 - Excellent Graduation Award}
+
+\item{2006 - First-Class award in the Collegial Physics Competition in Beijing, China }
+
+\item {2005 - Admitted into the Special Pivot Yao Class supervised by Turing Award winner, Prof. Andrew Chi-Chih Yao, 24 students selected campus-wise}
+
+\item {2005 - First-Class Scholarship for Undergraduate in Tsinghua University (5 out of 160 students in the Department of Computer Science)}
+
+\item {2004 - First-Class Scholarship for Freshman in Tsinghua University}
+
+\item {2004 - Ranked 4th in $\sim$400,000 examinees in National College Entrance Exam in Hubei Province, China}
+
+\item {2003 - First-Class Prize in the National Physics Olympiad in Hubei, China}
+
+\end{itemize}
+
+\section*{Patents}
+\begin{itemize}
+\item {{\em Intelligent Radio Resource Deallocation Framework Based on Inter-Burst Time (IBT) Prediction for User Equipment (UE) Energy Saving and Radio Resource Optimization for Cellular Networks.} \\Filed in 2012.}
+\item {{\em Screen-aware Mobile Application Optimization for Energy Saving.} \\Filed in 2012.}
+\item {{\em Using Social Graphs to Combat Malicious Attacks.}\\Publication number: {\bf US20120246720A1}. \\Published in 2012.}
+\end{itemize}
+
+
+\section*{Teaching}
+\begin{itemize}
+\item {Teaching Assistant in EECS 489, Computer Networks (Winter, 2011)}
+\end{itemize}
+
+\section*{Miscellaneous}
+\begin{itemize}
+\item {I have served as a reviewer for INFOCOM 2011, MC2R 2012, Transactions on Mobile Computing 2012.}
+\item {I have developed iOS and Android apps that have cumulatively over 3 million users.}
+\end{itemize}
+
+%\section*{Core courses}
+%\begin{itemize}
+%\item {\emph EECS 589  Advanced Computer Networks}: A+ (Fall, 2008)
+%\\- Course project: Measuring and identifying performance bottleneck for 3G smartphones
+%\item {\emph EECS 582  Advanced Operating Systems}: A- (Fall, 2008)
+%\\- Course project: Benchmarking application performance on 3G smartphones
+%\item {\emph EECS 588  Computer Network Security}: A (Winter, 2009)
+%\\- Course project: Privacy leakage attacks and defenses on Android platforms
+%\item {\emph EECS 583  Advanced Compilers}: A (Fall, 2009)
+%\\- Course project: Dynamic compiler-driven DVFS framework for controlling power on smartphones
+%\end{itemize}
+
+
+%\subsection*{Proceedings}
+%\begin{itemize}
+%\item A generalized T-Test and measure of multivariate dispersion,
+%  Proc. Second Berkeley Symposium of Mathematical Statistics and
+%  Probability, 1951.
+%\end{itemize}
+
+\bigskip
+
+% Footer
+%\begin{center}
+%  \begin{footnotesize}
+%    Last updated: \today \\
+%    \href{\footerlink}{\texttt{\footerlink}}
+%  \end{footnotesize}
+%\end{center}
+
+\end{document}

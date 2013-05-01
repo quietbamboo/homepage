@@ -1,0 +1,141 @@
+\documentclass[10pt]{article}
+\topmargin-2.0cm
+
+\usepackage{textcomp,xspace,url}
+\usepackage{fancyhdr}
+\usepackage{pagecounting}
+\usepackage[dvips]{color}
+\usepackage{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+
+%\advance\oddsidemargin-0.65in
+\advance\oddsidemargin-0.98in
+\textheight9.2in
+\textwidth6.75in
+\newcommand\bb[1]{\mbox{\em #1}}
+\def\baselinestretch{1.05}
+
+\newcommand{\etc}{\emph{etc.}\xspace}
+\newcommand{\ie}{\emph{i.e.,}\xspace}
+\newcommand{\eg}{\emph{e.g.,}\xspace}
+\newcommand{\etal}{\emph{et al.}\xspace}
+\newcommand{\wrt}{\emph{w.r.t.}\xspace}
+\newcommand{\hsp}{\hspace*{\parindent}}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\begin{document}
+\thispagestyle{fancy}
+%\pagenumbering{gobble}
+%\fancyhead[location]{text}
+% Leave Left and Right Header empty.
+\lhead{}
+\rhead{}
+%\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%\fancyfoot[C]{\footnotesize \textcolor{gray}{http://www.stanford.edu/$\sim$sundaes/application}}
+\fancyfoot[C]{\footnotesize \textcolor{gray}{http://www.eecs.umich.edu/{\texttildelow}hjx/}}
+
+
+%\pagestyle{myheadings}
+%\markboth{Sundar Iyer}{Sundar Iyer}
+
+\pagestyle{fancy}
+\lhead{\textcolor{gray}{\it Junxian Huang: Research Statement}}
+\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
+%\rhead{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\fancyfoot[C]{\footnotesize http://www.stanford.edu/$\sim$sundaes/application}
+%\ref{TotPages}
+
+% This kind of makes 10pt to 9 pt.
+\begin{small}
+
+%\vspace*{0.1cm}
+\begin{center}
+{\LARGE \bf RESEARCH STATEMENT}\\
+\vspace*{0.1cm}
+{\normalsize Junxian Huang (hjx@eecs.umich.edu)}
+\end{center}
+%\vspace*{0.2cm}
+
+%\begin{document}
+%\centerline {\Large \bf Research Statement for Sundar Iyer}
+%\vspace{0.5cm}
+
+% Write about research interests...
+%\footnotemark
+%\footnotetext{Check This}
+
+\subsubsection*{Research Overview}
+
+The use of cellular data networks is increasingly popular due to the widespread deployment of 3G/4G technologies and the rapid adoption of smartphones. Besides email and web browsing, a variety of network applications are now available, rendering smartphones potentially useful substitutes for their desktop counterparts. My research focus lies in the networking and energy aspects of smartphone applications and cellular networks.
+
+In this statement, I first discuss my existing works in the cellular network and smartphone space, followed by a few other projects that I have worked on previously. Towards the end, I will talk about the future research agenda.
+
+\subsubsection*{Existing Research: Network and Energy Efficiency}
+
+\subsubsection*{\emph{1. Characterizing Cellular Network Performance}:} Since 2008, I have been working on devising systematical methodologies and developing tools for characterizing cellular network performance directly from end users. The tools I have developed (as the lead developer) includes \emph{3GTest}~\cite{3gtest}, \emph{4GTest}~\cite{4gtest} and \emph{MobiPerf}~\cite{mobiperf}, which have cumulatively over 150,000 users from over 190 countries or regions. Notably, \emph{MobiPerf} has received both the \emph{Open Internet App Award} and the \emph{People's Choice App Award} in the \emph{FCC Open Internet Apps Challenge}~\cite{fcc.award}. It is now an open-source project~\cite{mobiperf.repo} that I am actively working on and this project is in joint collaboration among University of Michigan, M-Lab, Google and University of Washington. In these measurement tools, I have devised methods to accurately measure round-trip time (RTT), DNS lookup time, uplink/downlink bandwidth, loss rate, and other network performance metrics for 3G, WiMAX and LTE 4G networks and compare those with WiFi networks.
+
+We also study the cellular data network infrastructure and its implications on the performance of CDN services~\cite{sigmetrics.cluster}. We observe that placing content servers close to GGSNs can potentially reduce the end-to-end latency by more than 50\% excluding the variability from air interface.
+
+\subsubsection*{\emph{2. Anatomizing Smartphone Application Performance}:}
+
+In order to understand the key factors that affect smartphone application performance, I develop a systematic methodology for comparing this performance along several key dimensions such as carrier networks, device capabilities, and server configurations~\cite{mobisys.3gtest}. I perform detailed analysis to help carriers, phone vendors, content providers, and application developers gain insight. For example, for carriers, I infer various network level problems, \eg high latency or high loss rate, which they can directly take action on. For phone vendors, I identify performance bottlenecks on the devices or issues associated with the content. These issues can be resolved either independently or by cooperating with content providers. And for application developers, I evaluate factors such as the overhead of HTML rendering and Javascript execution given a particular software configuration. I also perform longitudinal study that compare the determinant factors on smartphone applications in 2010~\cite{mobisys.3gtest} and 2012~\cite{huang12_mobisys}. I identify that the performance bottleneck for web-based applications lies more in the device’s processing power than in the network, indicated by the high average CPU usage of 79.3\% in LTE network, as well as the underutilized network capacity due to small object size in typical web transactions.
+
+\subsubsection*{\emph{3. Understanding Power Characteristics of 4G LTE Networks}:}
+With the recent advent of 4G LTE networks, there has been increasing interest to better understand its power characteristics, compared with 3G/WiFi networks. I take one of the first steps in this direction~\cite{huang12_mobisys} and develop the first empirically derived comprehensive power model of a commercial LTE network with less than 6\% error rate and state transitions matching the specifications. Using a comprehensive data set consisting of 5-month traces of 20 smartphone users, I carefully investigate the energy usage in 3G, LTE, and WiFi networks and evaluate the impact of configuring LTE-related parameters. Despite several new power saving improvements, I find that LTE is as much as 23 times less power efficient compared with WiFi, and even less power efficient than 3G, based on the user traces and the long high power tail is found to be a key contributor.
+
+\subsubsection*{\emph{4. Optimizing Energy Usage in Cellular Networks}:}
+
+Today’s cellular systems operate under diverse resource constraints: limited frequency spectrum, network processing capability, and handset battery life. We observe that periodic transfers incur tremendous energy and signal overhead in today's smartphone traffic~\cite{qian12_www}. In addition, we consider a novel and important factor, handset screen status, \ie whether the screen is on or off, which was ignored by previous approaches for optimizing cellular resource utilization~\cite{imc.screen}. We find that off-screen traffic accounts for 58.5\% of the total radio energy consumption although their traffic volume contribution is much smaller. Such unexpected results are attributed to the unique cellular resource management policy that is not well understood by developers, leading to cellular unfriendly mobile apps. We then make a further step by proposing screen-aware optimization, by leveraging the key observation that screen-off traffic is much more delay-tolerant than its screen-on counterpart due to a lack of user interaction. Our proposal can better balance the key tradeoffs in cellular networks. 
+
+In another work in submission, I develop a novel system, which dynamically and intelligently determines in real time when to deallocate radio resources for a UE based on predicting the network idle time. Using 7-month-long real-world cellular traces, I comprehensively evaluate it using various traffic features and machine learning algorithms. Properly configured, it correctly predicts 85.88\% of idle time instances, achieving radio energy savings of 59.07\%, at the cost of 91.01\% of additional signaling overhead, significantly outperforming existing proposals.  it incurs negligible energy overhead and has fast response times, demonstrating the practicality of deploying the system on contemporary smartphones.
+
+\subsubsection*{\emph{5. Effect of Network Protocol and Application Behavior on Performance for LTE Networks}:}
+
+Despite it fast increasing user base, the network performance and the interplay between mobile applications and the network for the LTE networks still remain unexplored. In one work in submission, I thoroughly study the network performance of LTE network with a data set covering around 300,000 LTE users in a large metropolitan area for 10 days. I revisit basic network metrics in the LTE network and compare with previously studied network conditions. I also observe that a high downstream queueing delay, likely due to bufferbloat,  has caused TCP congestion window collapse upon one packet loss. With the help of TCP Timestamps option, I have devised a lightweight passive bandwidth estimation algorithm, allowing us to observe that for 71.26\% of the large flows, the bandwidth utilization ratio is below 50\%. I find that TCP may not fully utilize the fast-varying available bandwidth when RTT is large in the LTE network. Upon further analysis, I identify 52.61\% of all downlink TCP flows have been throttled by TCP receive window and data transfer patterns for some popular applications are both energy and network unfriendly.
+
+We also study the incorrect caching behavior of smartphone applications have incurred wasted network bandwidth usage~\cite{qian12_mobisys} and about 30\% of the total mobile traffic volume can be saved with correct caching and content compression.
+
+\subsubsection*{Other Research: Computer Security and Computer Vision}
+
+Besides cellular network and energy related projects, I've also worked on a variety of projects, such as computer security and computer vision.
+
+We design and implement Souche~\cite{ccs12}, a system that recognizes legitimate users early in online services by leveraging social connections established over time. Legitimate users help identify other legitimate users through an implicit vouching process, strategically controlled within vouching trees. In our evaluation on a real dataset of several hundred million users, Souche can efficiently identify 85\% of legitimate users early, while reducing the percentage of falsely admitted malicious users from 44\% to 2.4\%. Our evaluation further indicates that Souche is robust in the presence of compromised accounts. It is generally applicable to enhance usability and security for a wide class of online services.
+
+I also design and implement a novel framework, called SocialWatch~\cite{asiaccs13}, to detect online service abuse attacks at a large scale. We explore a set of social graph properties, ranging from those that describe individual user behaviors, to those that capture the interactions among users and their social affinities. We evaluate SocialWatch using a large dataset from a major email provider with more than 682 million users and over 5.75 billion directional relationships. SocialWatch successfully detects 56.85 million attacker-created accounts
+with a low false detection rate of 0.75\% and a low false negative rate of 0.61\%. In addition, this work also addresses the challenge of identifying hijacked accounts within the legitimate account set through a Bayesian decision framework.
+
+Back in 2007, when I was an undergraduate in Tsinghua University, China, I worked on a project in computer vision. I design and implement a gesture detection system that use human gesture patterns to detect deception~\cite{acii07}.
+
+\subsubsection*{Future Research Agenda}
+
+As future directions, I will continue and extend my previous works in the following aspects:
+\begin{itemize}
+\item \emph{Cellular Network Performance Characterization.} I will continue the development \emph{MobiPerf} and make it into a general mobile measurement platform that can benefit the entire research community. In addition, I will make use of the data set collected by \emph{MobiPerf} to make more analysis on cellular network performance and this data set~\cite{mobiperf.data} is also available for other researchers.
+\item \emph{Energy Optimization for Cellular Networks.} I will extend the inter-burst time prediction framework and implement it as a real functioning system on Android and use fast dormancy to save energy for end users. In addition, I will improve the prediction algorithm to consider TCP-level and application level context, which may further increase the prediction accuracy.
+\item \emph{Effect of Network Protocol and Application Behavior on Performance for LTE Networks}. I will improve the design of the bandwidth estimation algorithm that we used to quantify the network utilization ratio of existing applications in the LTE networks. I will also explore the predictability of the available bandwidth in the LTE networks and study its implications and applications.
+\end{itemize}
+
+\subsubsection*{Summary} In summary, I have received extensive training from research projects in the mobile computing and cellular networking space, as well as a few other areas in computer science before and during my Ph.D. years. I have also worked on projects that deal with large-scale data analysis, involving tens of terabytes of data, billions of users, or billions of packets, which require me to debug/optimize my code following industrial standards. More importantly, I am very interested in the projects that I have worked on and I am enthusiastic to take a job as a researcher in the area of mobile computing and networking.
+
+%\begin{flushright}
+%Sundar Iyer
+%\end{flushright}
+
+\end{small}
+%\newpage
+
+%\begin{thebibliography}{deSolaPITH}
+% Change font size?
+% \tiny, \footnotesize, \small,\normalsize, \large, \Large, \LARGE, and \huge
+\begin{small}
+%\begin{footnotesize}
+\bibliographystyle{abbrv}
+\bibliography{rs}
+%\end{footnotesize}
+\end{small}
+\end{document}
+

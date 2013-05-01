@@ -1,0 +1,101 @@
+\documentclass[10pt]{article}
+\topmargin-2.0cm
+
+\usepackage{textcomp,xspace,url}
+\usepackage{fancyhdr}
+\usepackage{pagecounting}
+\usepackage[dvips]{color}
+\usepackage{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
+
+%\advance\oddsidemargin-0.65in
+\advance\oddsidemargin-0.98in
+\textheight9.2in
+\textwidth6.75in
+\newcommand\bb[1]{\mbox{\em #1}}
+\def\baselinestretch{1.05}
+
+\newcommand{\etc}{\emph{etc.}\xspace}
+\newcommand{\ie}{\emph{i.e.,}\xspace}
+\newcommand{\eg}{\emph{e.g.,}\xspace}
+\newcommand{\etal}{\emph{et al.}\xspace}
+\newcommand{\wrt}{\emph{w.r.t.}\xspace}
+\newcommand{\hsp}{\hspace*{\parindent}}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\begin{document}
+\thispagestyle{fancy}
+%\pagenumbering{gobble}
+%\fancyhead[location]{text}
+% Leave Left and Right Header empty.
+\lhead{}
+\rhead{}
+%\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%\fancyfoot[C]{\footnotesize \textcolor{gray}{http://www.stanford.edu/$\sim$sundaes/application}}
+\fancyfoot[C]{\footnotesize \textcolor{gray}{http://www.eecs.umich.edu/{\texttildelow}fengqian/}}
+
+
+%\pagestyle{myheadings}
+%\markboth{Sundar Iyer}{Sundar Iyer}
+
+\pagestyle{fancy}
+\lhead{\textcolor{gray}{\it Feng Qian: Teaching Statement}}
+\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
+%\rhead{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\fancyfoot[C]{\footnotesize http://www.stanford.edu/$\sim$sundaes/application}
+%\ref{TotPages}
+
+% This kind of makes 10pt to 9 pt.
+\begin{small}
+
+%\vspace*{0.1cm}
+\begin{center}
+{\LARGE \bf TEACHING STATEMENT}\\
+\vspace*{0.1cm}
+{\normalsize Feng Qian (fengqian@umich.edu)}
+\end{center}
+%\vspace*{0.2cm}
+
+%\begin{document}
+%\centerline {\Large \bf Research Statement for Sundar Iyer}
+%\vspace{0.5cm}
+
+% Write about research interests...
+%\footnotemark
+%\footnotetext{Check This}
+
+In a research university, a professor has a dual role as both a scholar and an educator. I firmly believe that besides conducting innovative and impactful research, teaching is a critical mission of a faculty member. During my undergraduate and graduate study, I maintained a strong commitment to teaching, not only due to my love of teaching since childhood, but also because I believe computer science is a beautiful discipline that makes students think accurately, logically, and critically, offering them far more than a successful IT career.
+
+\subsubsection*{Teaching Experience}
+
+I started teaching in my senior year of undergraduate as a teaching assistant of CS 371 (course project of operating system), which is the lab component of CS 307 (operating system principles). The audience consisted of about 30 students of the ACM Honors Class at SJTU, who were required to independently implement four components of thread management, virtual memory, file system, and networking, for the Nachos instructional OS\footnote{\url{http://www.cs.washington.edu/homes/tom/nachos/}}. My job involved giving three lectures, holding office hours, grading, and managing the course website. At the beginning, I observed that the students encountered two major difficulties: a lack of familiarity with the Nachos code base, and a lack of careful consideration of implementation details (in particular the corner cases). To deal with the first difficulty, in my lectures I spent efforts illustrating the system components and their interactions using a top-down approach, focusing on helping students understand the modularity and clean interfaces in operating system design. Based on my successful experience of completing CS 371, I encouraged students to use formal methods, such as an FSM capturing all possible states of the TCP-like reliable transmission protocol, to attack the second difficulty. I was excited to see my efforts were paid off as almost all my students achieved the basic requirements and quite a few of them completed the challenging tasks for bonus points.
+
+%At later stages, I also guided students through refining their implementation by organizing discussions on performance optimization.
+
+My graduate study at Michigan offered me further in-depth teaching experiences. In my third year at Michigan, I worked with two professors and two other TAs on teaching EECS 203 (discrete mathematics) for about 220 students split into two sessions. I was responsible for teaching two discussion sessions every week, creating homework questions, and grading the three exams. EECS 203 sets the mathematical foundations for higher-level courses in computer science by introducing basic concepts such as propositional logic, set theory, and elementary graph theory. The students were mostly freshman and sophomore undergraduates who took EECS 203 as their first CS course. Unexpectedly, in my first class, there were some communication difficulties between me and my junior students. Having realized that, I actively changed my teaching style in two ways. First, I tried to present the abstract mathematical concept to students in an intuitive and engaging manner, using simple language and real-life examples, as well as enthusiastically introducing more interaction with students. Second, for even more complex concepts and algorithms (\eg Dijkstra's algorithm), I created animated slides to visualize the way they work and to stimulate students' interests, although creating the slides was tedious. At the end, with these adaptations in the teaching style, I felt rewarded because my students expressed stronger interest in the course, as demonstrated by their positive instructor evaluations.
+
+During my Ph.D. study, I gave a number of talks at top conferences with academic and industrial researchers as the audience. I also gave several guest lectures in the Computer Networking (EECS 489) and Advanced Computer Networking (EECS 589) classes, taught by my advisor Professor Mao. In 2008, I collaborated with Professor Hengming Zou at SJTU on producing the Chinese edition of the well-known textbook \emph{Algorithms} by Dasgupta \etal\footnote{\url{http://www.cs.berkeley.edu/~vazirani/algorithms.html}} This was a process calling for creativity and originality because instead of mechanically translating the whole book, we decided to keep the original English text and comment on difficult parts of the book in Chinese, given that most undergraduates in China have the basic English reading ability. I was responsible for half of the book, yielding comments of 40,000 words. My commented edition\footnote{\url{http://www.china-pub.com/195113}} is now used as the algorithm textbook by many top universities in China.
+
+\subsubsection*{Teaching Philosophy}
+
+I believe that for any discipline, there exists a ``thinking pattern'' following which enables one to formulate, analyze, and solve a problem much easier. Computer science makes no exception. For teaching lower-level undergraduate courses, the role of an instructor is not only to deliver the knowledge straight from the textbook but also to help students develop the thinking skill, which is embodied in three aspects forming the core of the computer science: algorithms, data structures, and programming languages. They should be emphasized in every CS undergraduate course. Furthermore, in my undergraduate study, the most precious experience which I believed benefited my future study was working on several large projects, including a complete database management system, a pipelining MIPS CPU, a MIPS compiler, a ray-tracing engine, and a 3D video game. Therefore in my opinion, course projects are critical components of computer science education, because they provide an invaluable way for students to understand every detail of how a complex system works. Besides that, engineering projects are real-world exercises for improving the programming skill and making students learn to work as teams as early as possible.
+
+In higher-level research-oriented courses for graduate study, students should have more freedom to explore research problems. The role of an instructor is to provide sufficient technical background, to introduce the latest research results, and to stimulate meaningful discussions. The instructor should also help students form the core idea of their research projects, and provide insightful suggestions regarding to their key design decisions for the projects. At Michigan, I have seen great examples where successful course projects of EECS 589 (Advanced Networking) and EECS 582 (Advanced OS) ended up with high-quality publications under the joint efforts of the students and the professor. Students should also learn to objectively evaluate others' work, as well as to wisely compare a series of similar papers, as a prerequisite for proposing any novel approach is to carefully study existing work.
+
+Last but not least, as an educator in the software and system area, I would like to keep students updated with new technologies, focusing on their relationship with the course I am teaching. Clearly the students will be more motivated if what they are learning closely relates to those real systems that are being used every day.
+
+\subsubsection*{Teaching Interests}
+
+I am capable of teaching a wide range of undergraduate courses, including but not limited to: discrete mathematics, algorithms, data structures, computer networking, computer security, operating systems, artificial intelligence, and computer graphics. They cover a substantial portion of the undergraduate curriculum in computer science. At the graduate level, I can teach computer networking, computer security, and advanced topics in related areas. I will also offer directed study courses that let undergraduate or master students with spare time work with me on various research projects. Personally, I have actively involved in and benefited from conducting research when I was an undergraduate.
+
+I intend to introduce new graduate level classes. For example, I am interested in creating a new course about cellular networks, which have recently witnessed rapid growth, from the perspective of the system design and the interaction between smartphone applications and the network.
+
+In conclusion, with my enthusiasm, experience and technical knowledge, I am eagerly looking forward to the opportunity to teach and advise students at your university.
+
+\end{small}
+\end{document}
+
